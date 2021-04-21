@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body,main{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.contenedor-1{
+    width: 100%;
+    height: 10vh;
+    
+}
+
+.contenedor-1 .row{
+    width: 100%;
+    height: 10vh;
+    background-color: #F2D866;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-1 .row ul{
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedor-1 .row ul li{
+    padding: 5px 20px;
+    list-style: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5rem;
+    
+    
+    
+}
+
+.contenedor-1 .row ul li:hover{
+    background-color: #DBD267;
+}
+
+
+.contenedor-1 .row ul li a{
+    text-decoration: none;
+    color: rgb(41, 39, 39);
+}
+
+.contenedor-movil{
+    display: none;
+}
+
+
+@media(max-width:480px){
+    .contenedor-1{
+        display: none;
+    }
+    .contenedor-movil{
+        width: 100%;
+        display: block;
+    }
+
+    .contenedor-movil .row{
+      width: 100%;
+      background-color: #F2D866;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contenedor-movil .row ul{
+        width: 100%;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contenedor-movil .row ul li{
+        padding: 5px 0px;
+        list-style: none;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 1.5rem;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        
+    }
+
+    .contenedor-movil .row ul li:hover{
+        background-color: #DBD267;
+    }
+    
+    .contenedor-movil .row ul li a{
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: rgb(41, 39, 39);
+    }
+}
+
